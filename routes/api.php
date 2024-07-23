@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\api\AuthController;
 use App\Http\Controllers\api\UserController;
-use App\Http\Controllers\DestinationsController;
+use App\Http\Controllers\api\DestinationsController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
