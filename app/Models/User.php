@@ -54,4 +54,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Gallery::class);
     }
+
+    public function destination(): HasMany
+    {
+        return $this->hasMany(Destinations::class);
+    }
 }
