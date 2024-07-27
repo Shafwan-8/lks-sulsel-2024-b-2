@@ -16,6 +16,7 @@ Route::get('/destination', [DestinationsController::class, 'index']);
 Route::get('/destination/show/{id}', [DestinationsController::class, 'show']);
 
 Route::get('/gallery', [GalleryController::class, 'index']);
+Route::get('/gallery/show/{id}', [GalleryController::class, 'show']);
 
 
 Route::middleware('auth:sanctum')->group(function () {

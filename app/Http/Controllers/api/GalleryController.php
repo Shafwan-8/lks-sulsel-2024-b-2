@@ -73,7 +73,24 @@ class GalleryController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $data = Gallery::find($id);
+
+        if (is_null($data))
+        {
+            return response()->json([
+                'status' => false,
+                'message' => 'data not found',
+                'data' => null
+            ], 201);
+        }
+        else
+        {
+            return response() -> json([
+                'status' => false,
+                'message' => 'success',
+                'data' => $data
+            ]);
+        }
     }
 
     /**
